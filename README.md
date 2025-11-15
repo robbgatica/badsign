@@ -187,7 +187,7 @@ pylint clamav_siggen/
 
 ## License
 
-Apache 2.0 (same as capa)
+Apache 2.0
 
 ## References
 
