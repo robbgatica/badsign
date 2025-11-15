@@ -1,0 +1,7 @@
+# Core dependencies
+pefile>=2023.2.7
+click>=8.0.0
+lief>=0.13.0  # Cross-platform binary parsing (PE, ELF, Mach-O)
+
+# Optional dependencies
+# plyara>=2.1.0  # Uncomment for YARA support
