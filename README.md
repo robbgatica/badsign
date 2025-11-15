@@ -34,7 +34,7 @@ Generate ClamAV signatures from malware binaries and YARA rules from capa analys
 
 ```bash
 # Clone the repository
-git clone <repo-url> badsign
+git clone https://github.com/robbgatica/badsign.git badsign
 cd badsign
 
 # Install dependencies
@@ -143,13 +143,6 @@ print(yara_rule)
 - [ ] Logical signature builder
 - [ ] Signature optimization
 
-## Architecture
-
-Designed as a **library-first** project that can be:
-- Used standalone via CLI
-- Imported into other projects (e.g., capa-server)
-- Extended with plugins
-
 ## capa-to-YARA Conversion
 
 Generate behavioral YARA rules from capa malware analysis:
@@ -190,26 +183,6 @@ mypy clamav_siggen/
 
 # Linting
 pylint clamav_siggen/
-```
-
-## Integration with capa-server
-
-This project is designed to be easily integrated into capa-server:
-
-```python
-# In capa-server/app/main.py
-from clamav_siggen import ClamAVSigGen
-
-@app.post("/api/analyses/{id}/generate-signature")
-async def generate_signature(id: int):
-    analysis = get_analysis(id)
-
-    siggen = ClamAVSigGen(
-        file_path=analysis.file_path,
-        capa_results=json.loads(analysis.result_json)
-    )
-
-    return siggen.generate_from_capa()
 ```
 
 ## License
