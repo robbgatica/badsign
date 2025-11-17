@@ -11,7 +11,7 @@ Generate ClamAV signatures from malware binaries and YARA rules from capa analys
 | **Binary Analysis** | Malware file only | ClamAV signatures (hash, strings, PE sections) | Quick signatures without behavior analysis |
 | **Behavioral Analysis** | capa JSON results | YARA rules (capabilities, APIs, MITRE ATT&CK) | Advanced detection based on malware behavior |
 
-**Key Point:** ClamAV signatures can be generated from binaries directly. YARA rules require running capa first.
+**Note:** ClamAV signatures can be generated from binaries directly. YARA rules require running capa first.
 
 ## Features
 
@@ -26,9 +26,6 @@ Generate ClamAV signatures from malware binaries and YARA rules from capa analys
 - **Automatic Categorization** - Ransomware, Trojan, Backdoor, etc.
 - **MITRE ATT&CK Mapping** - Techniques embedded in rules
 - **API & Capability Strings** - Detect based on behaviors, not just patterns
-
-### Validation
-- **Test Against Clean Files** - Avoid false positives
 
 ## Installation
 
