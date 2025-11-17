@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "badsign"
 version = "0.1.0"
-description = "Generating signatures for bad stuff, period."
+description = "Generate detection signatures for bad stuff"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "Apache-2.0"}
@@ -51,9 +51,9 @@ capa = [
 badsign = "badsign.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/badsign"
-Repository = "https://github.com/yourusername/badsign"
-Issues = "https://github.com/yourusername/badsign/issues"
+Homepage = "https://github.com/robbgatica/badsign"
+Repository = "https://github.com/robbgatica/badsign"
+Issues = "https://github.com/robbgatica/badsign/issues"
 
 [tool.setuptools.packages.find]
 include = ["badsign*"]
